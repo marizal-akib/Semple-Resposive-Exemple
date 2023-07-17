@@ -11,7 +11,7 @@ img {
 }
 
 .row {
-    height: 350px;
+    height: 500px;
     border: 5px solid yellowgreen;
     display: flex;
     gap: 5px;
@@ -19,7 +19,7 @@ img {
 }
 
 .row-car {
-    height: 500px;
+    height: 800px;
     border: 5px solid lightskyblue;
     display: flex;
     gap: 5px;
@@ -39,4 +39,23 @@ img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 5px;
+}
+
+/* responsive media query */
+@media screen and (max-width: 567px) {
+    .row-car, .row {
+        flex-direction: column;
+        height: auto;
+    }
+    .box-collage{
+        grid-template-columns: 1fr;
+    }
+
+}
+/* medium device */
+@media screen and (min-width: 576px) and (maz-width: 992px) {
+    .row-car, .row {
+        flex-direction: column;
+        height: auto;
+    }    
 }
