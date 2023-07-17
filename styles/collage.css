@@ -1,0 +1,42 @@
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    color: rgba(224, 49, 14, 0.921);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.row {
+    height: 350px;
+    border: 5px solid yellowgreen;
+    display: flex;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+.row-car {
+    height: 500px;
+    border: 5px solid lightskyblue;
+    display: flex;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+.row>div {
+    flex: 1;
+}
+
+.vertical-collage img {
+    height: calc((100% - 5px)/2);
+
+}
+
+.box-collage {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+}
